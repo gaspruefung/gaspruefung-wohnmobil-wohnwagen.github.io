@@ -1,0 +1,312 @@
+/* Shared styles for all pages */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #1e3a5f;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header img.logo {
+  display: block;
+  margin: 0 auto 22px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #1e3a5f;
+}
+
+.box {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box:first-child {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  line-height: 1.8;
+  padding-left: 22px;
+}
+
+/* About box with photo */
+.about-box {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.about-box .about-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.about-box h2 {
+  margin-top: 0;
+}
+
+.photo-placeholder {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px dashed #c9c9c9;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
+
+.photo-placeholder__icon {
+  font-size: 32px;
+}
+
+/* Checklist with checkmark icons */
+ul.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.checklist li {
+  position: relative;
+  padding-left: 28px;
+}
+
+ul.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+/* Testimonials */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.testimonial-placeholder {
+  margin: 0;
+  padding: 16px 18px;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #888;
+  font-style: italic;
+}
+
+.testimonial-placeholder p {
+  margin: 0;
+}
+
+.testimonial-placeholder cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Call-to-action buttons */
+.cta-wrap {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff7a00;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 6px;
+}
+
+.btn:hover {
+  background: #e86e00;
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn--whatsapp {
+  background: #25d366;
+}
+
+.btn--whatsapp:hover {
+  background: #1ebe57;
+}
+
+/* Contact block */
+.contact {
+  background: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact a {
+  color: #ffd9b0;
+}
+
+.contact .btn {
+  color: white;
+}
+
+/* Highlight / note box for placeholders & important info */
+.note {
+  border-left: 4px solid #ff7a00;
+  background: #fff7ef;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Price highlight */
+.price-highlight {
+  background: #fff7ef;
+  border-left: 4px solid #ff7a00;
+  padding: 14px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.price-highlight strong {
+  color: #ff7a00;
+  font-size: 26px;
+  margin-right: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 14px;
+  background: #eee;
+  color: #555;
+}
+
+footer a {
+  color: #1e3a5f;
+  margin: 0 8px;
+}
+
+footer .footer-address {
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/* Legal pages (Impressum / Datenschutz) */
+.legal {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.legal h1 {
+  color: #1e3a5f;
+}
+
+.legal h2 {
+  margin-top: 35px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1e3a5f;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  header {
+    padding: 30px 16px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  section,
+  .legal {
+    padding: 25px 16px;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 10px 0;
+  }
+}
